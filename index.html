@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------SEO-Optimization---------------- -->
+    <meta name=“description” content="Logo Genius, a Dallas graphic designer in Dallas, Texas.  Offer logo, SEO, social media management, Dallas web design, and web development." />
+    <meta name="keywords" content="Logo Genius, Logo, Genius, Graphic Design, Web Design">
+    <meta name="author" content="Logo Genius">
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="DogpcsIsv8MfOJNDSMVMBvUm1QvIUQ4CYFODmIn3haI"/>
+    <!-- ----------------SEO-Optimization---------------- -->
+
+    <title>GRAY Marketing Solutions</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="header-animation.scss">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            <!-- <div class="header-box">
+                <div class="header-text">
+                    <h4 class="tertiary-heading-white">Los Angeles, California</h4>
+                    <h1 class="primary-heading-white">GRAY Marketing Solutions</h1>
+                    <p class="primary-text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nesciunt aliquam in repudiandae beatae repellat quisquam quasi quod ipsum. Eos tempore numquam, laboriosam atque quasi deleniti culpa mollitia.</p>
+                    <div class="header-button">
+                        <a href="#" class="btn-purple">Explore Now</a>
+                    </div>
+                </div>
+                <div class="header-image">
+                    <img src="img/puppy-treats-removebg-preview.png" alt="header image">
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/GRAY-logo-02.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">menu</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="#">Home</a>
+                <a class="nav__link" href="#">About</a>
+                <a class="nav__link" href="#">Services</a>
+                <a class="nav__link" href="#">Pricing</a>
+                <a class="nav__link" href="#">Testimonials</a>
+                <a class="btn-purple" href="#">Login/Register</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1)
+            }, {
+                threshold: 1
+            });
+            
+            observer.observe(document.querySelector(".header"));
+        });
+        </script>
+
+<!-- Banner Section -->
+<section class="banner" id="banner">
+    <div class="container">
+        <div class="banner-box">
+            <div class="banner-text">
+                <h4>Coupons</h4>
+                <h2>Want <span>10% off</span> your order? Enter your email</h2>
+                <form name="banner" method="POST" data-netlify="true"><input type="hidden" name="form-name" value="banner">
+                <div class="banner-item">
+                    <input type="email" name="Email Address" id="" class="input" placeholder="Email Address" required>
+                    <input type="submit" value="Submit" class="btn-submit">
+                </div>
+            </form>
+            </div>
+            <div class="banner-image">
+                <img src="img/lg-characters-03.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<div class="services">
+    <div class="container">
+        <h2>The Services</h2>
+        <h4>Every Digital Service For Your Company</h4>
+        <div class="services-box">
+            <div class="services-card">
+                <img src="img/Services SVG-01.png" alt="">
+                <h3>Service 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur voluptate fugiat laudantium dicta reprehenderit sunt dignissimos temporibus, quidem aperiam.</p>
+            </div>
+            <div class="services-card">
+                <img src="img/Services SVG-02.png" alt="">
+                <h3>Service 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur voluptate fugiat laudantium dicta reprehenderit sunt dignissimos temporibus, quidem aperiam.</p>
+            </div>
+            <div class="services-card">
+                <img src="img/Services SVG-03.png" alt="">
+                <h3>Service 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur voluptate fugiat laudantium dicta reprehenderit sunt dignissimos temporibus, quidem aperiam.</p>
+            </div>
+            <div class="services-card">
+                <img src="img/Services SVG-04.png" alt="">
+                <h3>Service 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur voluptate fugiat laudantium dicta reprehenderit sunt dignissimos temporibus, quidem aperiam.</p>
+            </div>
+            <div class="services-card">
+                <img src="img/Services SVG-04.png" alt="">
+                <h3>Service 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur voluptate fugiat laudantium dicta reprehenderit sunt dignissimos temporibus, quidem aperiam.</p>
+            </div>
+            <div class="services-card">
+                <img src="img/Services SVG-03.png" alt="">
+                <h3>Service 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur voluptate fugiat laudantium dicta reprehenderit sunt dignissimos temporibus, quidem aperiam.</p>
+            </div>
+            <div class="services-card">
+                <img src="img/Services SVG-02.png" alt="">
+                <h3>Service 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur voluptate fugiat laudantium dicta reprehenderit sunt dignissimos temporibus, quidem aperiam.</p>
+            </div>
+            <div class="services-card">
+                <img src="img/Services SVG-01.png" alt="">
+                <h3>Service 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur voluptate fugiat laudantium dicta reprehenderit sunt dignissimos temporibus, quidem aperiam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Choice Section -->
+<section class="choice">
+    <div class="container">
+        <h4>Why Gray?</h4>
+        <h2>We've been experts in the digital marketing field and create strong brands</h2>
+        <div class="choice-button">
+            <a href="#" class="btn-white">Hear what our clients say</a>
+        </div>
+    </div>
+</section>
+
+<!-- Packages Section -->
+<section class="packages">
+    <div class="container">
+        <h2>The Packages</h2>
+        <h4>Pick The Right One For Your Company</h4>
+        <div class="packages-box">
+
+            <div class="packages-card">
+                <div class="packages-header">
+                    <h3>Starter</h3>
+                </div>
+                <div class="packages-pricing">
+                    <h4>$199</h4>
+                    <h5>One-Time</h5>
+                    <h5><span>(Including Taxes)</span></h5>
+                </div>
+                <div class="packages-title">
+                    <h3>Title</h3>
+                </div>
+                <div class="packages-text">
+                    <p><span>&#10003;</span> Lorem Ipsum</p>
+                    <p><span>&#10003;</span> Lorem Ipsum</p>
+                    <p><span>&#10003;</span> Lorem Ipsum</p>
+                    <p><span>&#10003;</span> Lorem Ipsum</p>
+                    <p><span>&#10003;</span> Lorem Ipsum</p>
+                    <p><span>&#10003;</span> Lorem Ipsum</p>
+                    <p><span>&#10003;</span> Lorem Ipsum</p>
+                    <p><span>&#10003;</span> Lorem Ipsum</p>
+                </div>
+                <div class="packages-button">
+                    <a href="#" class="btn-purple">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="packages-card">
+                <div class="packages-header">
+                    <h3>Starter</h3>
+                </div>
+                <div class="packages-pricing">
+                    <h4>$199</h4>
+                    <h5>One-Time</h5>
+                    <h5><span>(Including Taxes)</span></h5>
+                </div>
+                <div class="packages-title">
+                    <h3>Title</h3>
+                </div>
+                <div class="packages-text">
+                    <p><span>&#10003;</span>  Lorem Ipsum</p>
+                    <p><span>&#10003;</span>  Lorem Ipsum</p>
+                    <p><span>&#10003;</span>  Lorem Ipsum</p>
+                    <p><span>&#10003;</span>  Lorem Ipsum</p>
+                    <p><span>&#10003;</span>  Lorem Ipsum</p>
+                    <p><span>&#10003;</span>  Lorem Ipsum</p>
+                    <p><span>&#10003;</span>  Lorem Ipsum</p>
+                    <p><span>&#10003;</span>  Lorem Ipsum</p>
+                </div>
+                <div class="packages-button">
+                    <a href="#" class="btn-purple">Buy Now</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="intro" id="intro">
+    <div class="container">
+        <h2>Our Vision</h2>
+        <div class="intro-box">
+            <p><span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Numquam assumenda dolore, sint eos in ducimus minus harum repellat ipsa quas iusto nostrum sunt eum tenetur exercitationem magni saepe quod tempora?</p>
+            <p><span>Lorem ipsum</span> dolor sit, amet consectetur adipisicing elit. Ipsum deleniti qui quis necessitatibus quisquam, porro commodi ut ducimus neque, nihil reprehenderit officia aliquid eum cum ratione alias veniam assumenda dicta.</p>
+        </div>
+        <div class="intro-button">
+            <a href="#" class="btn-white">View Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-box">
+            <div class="about-text">
+                <h2>Marketing Solutions</h2>
+                <p>Lorem ipsum dolor sit amet consectetur <span>adipisicing</span> elit. Minus consectetur doloribus <span>maxime</span> debitis esse, reiciendis distinctio perferendis. Rem odio culpa quaerat itaque elit. Minus consectetur doloribus beatae debitis esse, reiciendis maxime distinctio perferendis. Rem odio culpa quaerat <span>itaque.</span></p>
+                <div class="about-button">
+                    <a href="#" class="btn-purple">View Packages</a>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="img/lg-characters-01.png" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About 2 Section -->
+<section class="about-2" id="about-2">
+    <div class="container">
+        <div class="about-2-box">
+            <div class="about-2-text">
+                <h2>Marketing Solutions</h2>
+                <p>Lorem ipsum dolor sit amet consectetur <span>adipisicing</span> elit. Minus consectetur doloribus <span>maxime</span> debitis esse, reiciendis distinctio perferendis. Rem odio culpa quaerat itaque elit. Minus consectetur doloribus beatae debitis esse, reiciendis maxime distinctio perferendis. Rem odio culpa quaerat <span>itaque.</span></p>
+                <div class="about-2-button">
+                    <a href="#" class="btn-purple">View Packages</a>
+                </div>
+            </div>
+            <div class="about-2-image">
+                <img src="img/lg-characters-02.png" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <h2 class="primary-heading-dark-grey text-align-center">Service Reviews</h2>
+        <h4 class="tertiary-heading-secondary text-align-center">Our Customers</h4>
+        <div class="testimonials-box">
+
+            <div class="testimonials-card">
+                <h3 class="tertiary-heading-dark-grey">Absolutely Stunning</h3>
+                <p class="primary-text-grey">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum tempora laboriosam dolorum inventore, tempore voluptatum!</p>
+                <h5 class="primary-text-secondary">John Doe.</h5>
+            </div>
+
+            <div class="testimonials-card">
+                <h3 class="tertiary-heading-dark-grey">Beyond Pleased</h3>
+                <p class="primary-text-grey">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum tempora laboriosam dolorum inventore, tempore voluptatum!</p>
+                <h5 class="primary-text-secondary">John Doe.</h5>
+            </div>
+
+            <div class="testimonials-card">
+                <h3 class="tertiary-heading-dark-grey">Perfect Detailing</h3>
+                <p class="primary-text-grey">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum tempora laboriosam dolorum inventore, tempore voluptatum!</p>
+                <h5 class="primary-text-secondary">John Doe.</h5>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<!-- <section class="contact padding-top-8 padding-bottom-8" id="contact">
+    <div class="container">
+        <div class="contact-box">
+            <div class="contact-box-text">
+                <h2 class="secondary-heading-white">Contact Us Now</h2>
+                <h4 class="tertiary-heading-secondary">Reach Out</h4>
+                <p class="primary-text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat maxime nemo voluptatum eveniet consectetur eius commodi vitae tenetur dolorum similique.</p>
+            </div>
+            <form name="contact" method="POST" data-netlify="true"><input type="hidden" name="form-name" value="contact">
+
+                <div class="contact-box1">
+                    <div class="contact-box1-item">
+                        <h5 class="tertiary-heading-white">First Name*</h5>
+                        <input type="text" name="First Name" id="name" class="input" placeholder="Full Name" required>
+                    </div>
+                    <div class="contact-box1-item">
+                        <h5 class="tertiary-heading-white">Phone Number*</h5>
+                        <input type="tel" name="Phone Number" id="phone number" class="input" placeholder="Phone Number" required>
+                    </div>
+                    <div class="contact-box1-item">
+                        <h5 class="tertiary-heading-white">Email*</h5>
+                        <input type="email" name="Email" id="name" class="input" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="contact-box3">
+                    <div class="contact-box3-item">
+                        <h5 class="tertiary-heading-white">Message*</h5>
+                        <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                    </div>
+                </div>
+                <div class="contact-box-submit">
+                    <div class="contact-button">
+                    </div>
+                    <input type="submit" value="Submit" class="btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</section> -->
+
+<!-- Footer Section -->
+<section class="footer" id="footer">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-box-company">
+                <img src="img/GRAY-logo-03.png" alt="image">
+                <p class="primary-text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dicta provident harum optio assumenda, fugiat ullam odit deleniti fuga dolorum architecto iusto totam fugit quas.</p>
+                <p class="primary-text-white">Copyright © 2022 Gray Marketing Solutions - All rights reserved.</p>
+            </div>
+            <div class="footer-box-links">
+                <h3 class="tertiary-heading-white margin-bottom-1">Site Map</h3>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>Pricing</li></a>
+                    <a href="#"><li>Testimonials</li></a>
+                </ul>
+            </div>
+            <div class="footer-box-socials">
+                <h3 class="tertiary-heading-white mmargin-bottom-`">Social Media</h3>
+                <a href="#" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="#" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="#" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+            </div>
+            <div class="footer-box-development">
+                <h3 class="tertiary-heading-white margin-bottom-1">Contact Info</h3>
+                <a href="tel:#"><li>(111) 222 - 3333</li></a>
+                <a href="mailto:#"><li>example@example.com</li></a>
+                <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- --------------------- MODALS -------------------- -->
+<!-- Boiler Plate -->
+<!-- <div id="target-content">
+    <a href="#" class="close"></a>
+    <div id="target-inner">
+      <h2>Modal Heading</h2>
+      <p>Modal Content</p>
+    </div>
+  </div> -->
+
+<!-- Services Details Modal -->
+<div id="services-details-content">
+    <a href="#services" class="close"></a>
+    <div id="services-details-inner">
+      
+        <!-- services Details Section -->
+        <section class="services-details padding-top-8 padding-bottom-8">
+            <div class="container">
+                <h4 class="tertiary-heading-primary margin-bottom-1">Full Package Details</h4>
+                <h2 class="primary-heading-primary margin-bottom-4">Puppy Packages</h2>
+        
+                <h3 class="tertiary-heading-primary margin-bottom-2">Package 1 | $399</h3>
+                <p class="primary-text-grey margin-bottom-4">
+                    2 In-home training sessions <br>
+                    first session is 90-120 minutes ($250), second session is 60-80 minutes ($200) <br>                   
+                    Slip collar ($15) <br>                   
+                    Leash ($20) <br>
+                    Traveling charge for over 35 miles Renton
+                </p>
+        
+                <h3 class="tertiary-heading-primary margin-bottom-2">Package 2 | $999</h3>
+                <p class="primary-text-grey margin-bottom-4">
+                    4 In-home training sessions <br>
+                    first session is 90-120 minutes ($250), second session is 60-80 minutes ($600) <br>                   
+                    Slip collar ($15) <br>                   
+                    Leash ($20) <br>
+                    Text support ($100) <br>
+                    Call support ($150) <br>
+                    Access to monthly meet in the park training sessions ($50) <br>
+                    Traveling charge for over 50 miles Renton
+                </p>
+
+                <h3 class="tertiary-heading-primary margin-bottom-2">Package 3 | $2500</h3>
+                <p class="primary-text-grey margin-bottom-4">
+                    7 In-home training sessions <br>
+                    first session is 90-120 minutes ($250), second session is 60-80 minutes ($1200) <br>                   
+                    Slip collar ($15) <br>                   
+                    Leash ($20) <br>
+                    Text support ($100) <br>
+                    Call support ($150) <br>
+                    Access to monthly meet in the park training sessions ($50) <br>
+                    36 hour training and boarding ($1200) <br>
+                    E-collar and e-collar training ($400) <br>
+                    15% discount on all future trainings <br>
+                    No traveling charge for the greater Seattle area 
+                </p>
+        
+            </div>
+        </section>
+
+    </div>
+</div>
+<!-- Services Details Modal -->
+
+<!-- --------------------- MODALS -------------------- -->
+</body>
+</html>

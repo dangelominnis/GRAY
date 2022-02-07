@@ -1,0 +1,38 @@
+/* Buttons */
+.btn-purple {
+    background: var(--color-dark-purple);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    border-radius: 24px;
+    padding: 1.25rem 2rem;
+    cursor: pointer;
+    transition: .3s ease;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+}
+
+.btn-purple:hover {
+    background: var(--color-white);
+    color: var(--color-dark-purple);
+}
+
+.btn-white {
+  background: var(--color-white);
+  color: var(--color-dark-purple);
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  border-radius: 24px;
+  padding: 1.25rem 2rem;
+  cursor: pointer;
+  transition: .3s ease;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+}
+
+.btn-white:hover {
+  background: var(--color-dark-purple);
+  color: var(--color-white);
+}
